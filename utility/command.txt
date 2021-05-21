@@ -1,0 +1,36 @@
+
+# Application URL
+http://127.0.0.1:5000/prediction?Violation code=80.69BS&Route=00557&Body Style=PA&Agency=55
+
+
+# build docker container
+docker build -t ml_parking_service .
+
+# Run container for batch execution (No API Deployment)
+docker run ml_parking_service
+
+# map current docker container to host machine port (API Deployment)
+docker run -p 5000:5000 ml_parking_service
+
+
+# list of containers
+docker ps -a
+
+# stop docker container
+docker stop containerid
+
+
+# Remove container
+docker rm container_id
+
+# List images
+docker images -a
+
+
+# Remove images
+docker rmi Image_id
+
+
+# Check file system inside container
+
+docker exec -it name-of-container bash
