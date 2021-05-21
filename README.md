@@ -4,3 +4,5 @@
 *Notes*
  - Commands to build docker image.
      ```utility/commands```
+ - Commands for kubernetes deployment
+     ```deployment.yml```
