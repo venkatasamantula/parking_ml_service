@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: parking_ml_service_deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: parking_ml_service_deployment
+  template:
+    metadata:
+      labels:
+        app: parking_ml_service_deployment
+    spec:
+      containers:
+      - name: parking_service_ml_model
+        image: ml_parking_service
+        ports:
+          - containerPort: 5000
