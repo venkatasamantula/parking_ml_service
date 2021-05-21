@@ -3,4 +3,4 @@
  
 *Notes*
  - Commands to build docker image.
-     ~utility/commands~
+     ```utility/commands```
